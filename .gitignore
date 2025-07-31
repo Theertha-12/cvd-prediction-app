@@ -1,21 +1,9 @@
-# Python cache
+venv/
 __pycache__/
 *.pyc
-
-# Virtual environments
-.venv/
-env/
-venv/
-
-# Jupyter notebook checkpoints
-.ipynb_checkpoints/
-
-# Environment variables
+*.env
 .env
-
-# Data files and models (optional)
-*.joblib
-*.pkl
-*.db
-data/
-models/
+node_modules/
+dist/
+build/
+.DS_Store
