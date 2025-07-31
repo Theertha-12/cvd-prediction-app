@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+.smooth-transition {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5c5c5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.risk-low {
+  @apply bg-gradient-to-r from-green-400 to-green-500;
+}
+
+.risk-moderate {
+  @apply bg-gradient-to-r from-yellow-400 to-yellow-500;
+}
+
+.risk-high {
+  @apply bg-gradient-to-r from-red-500 to-red-600;
+}
+
+.chat-bubble-user {
+  @apply bg-blue-100 border border-blue-200 rounded-tr-none;
+}
+
+.chat-bubble-ai {
+  @apply bg-gray-100 border border-gray-200 rounded-tl-none;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+/* Add to the bottom of the file */
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(10px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.emergency-banner {
+  box-shadow: 0 4px 20px -10px rgba(239, 68, 68, 0.6);
+}
+
+.risk-selector button {
+  transition: all 0.3s ease;
+}
+
+.question-panel {
+  transition: all 0.3s ease;
+}

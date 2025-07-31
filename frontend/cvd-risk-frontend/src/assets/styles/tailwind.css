@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+/* Custom gradient backgrounds for risk indicators */
+.risk-low {
+  @apply bg-gradient-to-r from-green-400 to-green-500;
+}
+
+.risk-moderate {
+  @apply bg-gradient-to-r from-yellow-400 to-yellow-500;
+}
+
+.risk-high {
+  @apply bg-gradient-to-r from-red-500 to-red-600;
+}
+
+/* Responsive table */
+.table-responsive {
+  @apply block w-full overflow-x-auto;
+}
+
+/* Smooth transitions */
+.smooth-transition {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+/* Pulse animation for loading elements */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

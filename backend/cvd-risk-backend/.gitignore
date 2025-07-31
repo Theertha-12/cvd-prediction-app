@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.py[cod]
+*.sqlite
+*.log
+*.joblib
+venv/
+.DS_Store
+.idea/
