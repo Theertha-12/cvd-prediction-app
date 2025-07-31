@@ -148,7 +148,7 @@ npm start
 |-------------------|------------------------------------------|
 | Frontend          | React.js, Tailwind CSS                    |
 | Backend           | FastAPI, Pydantic, SQLAlchemy             |
-| Database          | MySQL L (via SQLAlchemy ORM)   |
+| Database          | MySQL (via SQLAlchemy ORM)   |
 | ML Model          | scikit-learn (Logistic Regression etc.)  |
 | Chatbot           | Groq LLM (Large Language Model)           |
 | Authentication    | JWT (PyJWT)                               |
